@@ -1,6 +1,10 @@
-# Repository for publishing validator info
+# Public validator registry
 
-A validator can choose to display its information to the public by creating a .json file with the following format:
+A validator can choose to display its information to the public by creating a public `.json` file and registering its URL in the Arthera validator info contract deployed at `0xfc00face00000000000000000000000000000001`
+
+## How to publish your validator info
+
+The first step is to create a `.json` file with the following format:
 
 ```json
 {
@@ -11,4 +15,6 @@ A validator can choose to display its information to the public by creating a .j
 }
 ```
 
-Validators can create pull requests to this repository to add their .json info file
+Once you have the file, create a Pull Request to this repository and commit your file here. Give it any name you want.
+
+Get the Raw URL for the uploaded file (e.g. `https://github.com/artheranet/validator-registry/raw/main/genesis-validator.json`), fire up the Arthera Wallet, open up your validator wallet and .... 
